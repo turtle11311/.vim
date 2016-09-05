@@ -95,13 +95,11 @@ nmap <leader>bd :bclose<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""
 " => check vim-Plug
 """""""""""""""""""""""""""""""""""""""""""""""""
-let vimplug_readme=expand('~/autoload/plug.vim')
+let vimplug=expand('~/.vim/autoload/plug.vim')
 if !filereadable(vimplug)
     echo "Installing vim-Plug.."
     echo ""
     silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    source $vimplug
-    :PlugInstall
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""
