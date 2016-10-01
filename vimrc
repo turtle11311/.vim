@@ -60,7 +60,7 @@ set shell=/bin/bash
 syntax enable
 syntax on
 set t_Co=256
-colorscheme PaperColor
+colorscheme molokai
 
 """""""""""""""""""""""""""""""""""""""""""""""""
 " => Indent and Tabshift
@@ -106,7 +106,8 @@ endif
 " => Plugin
 """""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdcommenter'
